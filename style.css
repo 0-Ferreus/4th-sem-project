@@ -1,0 +1,178 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 80px;
+    font-weight: bolder;
+    background-color: white;
+}
+
+.sth{
+    display: flex;
+}
+
+.sth a{
+    padding: 20px;   
+}
+
+.job{
+    color: #3189C9;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.khoja{
+    color: black;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.blue{
+    color: #3189C9;
+}
+
+.bgb{
+    color: white;
+    background: #3189C9;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.bgo{
+    color: white;
+    background: #DF8D2D;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.login{
+    align-items: center;
+    line-height: 0;
+}
+
+
+#home{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,.5) ;
+    height: 520px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(bgg.jpg) no-repeat center center/cover;
+    height: 600px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+.search{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 300px;
+    align-items: center;
+}
+
+input[type="text"] {
+    box-sizing: border-box;
+    height: 50px;
+    width: 400px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 20px;
+    align-items:center;
+}
+
+button{
+    width: 130px;
+    height: 40px;
+    background-color: #DF8D2D;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+/*footer*/
+
+footer{
+    background-color: #202a40;
+    color: white;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px 20px 70px;
+}
+
+.foot a{
+    text-decoration: none;
+    color: white;
+}
+
+.foot ul{
+    list-style: none;
+}
+
+.desc{
+    width: 500px;
+    display: block;
+    margin: auto 0;
+}
+
+.footlogo{
+    position: relative;
+    display: block;
+    height: 150px;
+    text-align: center;
+    line-height: 120px;
+    z-index: 1;
+}
+
+.circ{
+    background-color: white;
+    display: block;
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    top: 0px;
+    right: 570px;
+    border-radius: 100px;
+    z-index: -1;
+}
+
+.footlogo .job{
+    font-size: 20px;
+    color: #3189C9;
+}
+
+.footlogo .khoja{
+    font-size: 20px;
+    color: #DF8D2D;
+}
+
+.copy{
+    display: block;
+    text-align: center;
+    background-color: #303031;
+    font-size: 10px;
+    padding: 10px;
+    margin: 0px;
+}
