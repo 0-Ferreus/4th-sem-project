@@ -1,31 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JobKhoja - Home</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/3942091a8c.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <nav>
         <a href="#"><span class="job">JOB</span><span class="khoja">KHOJA</span></a>
         <ul class="sth">
             <a href="#" class="blue">HOME</a>
-            <a href="about.html">ABOUT US</a>
-            <a href="contact.html">CONTACT</a>
+            <a href="#about">ABOUT US</a>
+            <a href="#services">SERVICES</a>
+            <a href="#contact">CONTACT</a>
         </ul>
         <ul class="sth login">
-            <a href="login.htm" class="bgb">LOG IN</a>
-            <a href="signup.htm" class="bgo">SIGN UP</a>
+            <a href="#" id="show-login" class="bgb">LOG IN</a>
+            <a href="#" id="show-signup" class="bgo">SIGN UP</a>
         </ul>
     </nav>
+
+    <section class="main main-login">
+        <div class="container">
+            <img src="li.jpg" alt="other">
+
+            <div class="login">
+                <h1>WE are <span class="job">JOB</span><span class="khoja">KHOJA</span></h1>
+                <h3>Welcome Back !<br> Login in to your acccount </h3>
+
+                <form action="#">
+                    <div class="box">
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" id="fname" name="firstname" placeholder="Email"><br>
+
+                    </div>
+                    <div class="box">
+                        <i class="fa fa-lock">  </i>
+                        <input type="password" id="lname" name="lastname" placeholder="Password"><br>
+
+
+                    </div>
+
+                    <div class="tick">
+                        <input type="checkbox" id="check">
+
+                        <span>Remember me</span>
+
+                    </div>
+
+                    <div> <button class="btn">Log In</button> </div>
+                    <a>
+                        <div><i id="close-login" class="fa fa-times"></i></div>
+                    </a>
+                    <div class="txt">
+                        Not a member? <a id="change-signup">Sign Up</a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="main main-signup">
+        <div class="container">
+            <img src="su.jpg" alt="other">
+
+            <div class="login">
+                <h1>WE are <span class="job">JOB</span><span class="khoja">KHOJA</span></h1>
+                <h3>Join us !<br> Sign up for your new acccount </h3>
+
+                <form action="#">
+                    <div class="box">
+                        <i class="fa fa-user">  </i>
+                        <input type="email" id="fname" name="firstname" placeholder="Username"><br>
+
+                    </div>
+                    <div class="box">
+                        <i class="fa fa-envelope">  </i>
+                        <input type="email" id="fname" name="firstname" placeholder="Email"><br>
+
+                    </div>
+                    <div class="box">
+                        <i class="fa fa-lock">  </i>
+                        <input type="password" id="lname" name="lastname" placeholder="Password"><br>
+
+
+                    </div>
+
+                    <div> <button class="btn-1">Create Account</button> </div>
+                    <a>
+                        <div><i id="close-signup" class="fa fa-times"></i></div>
+                    </a>
+                    <div class="txt-signup">
+                        Already a member? <a href="login.htm">Login</a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
     <section id="home">
         <p>PLACE WHERE OPPORTUNITIES ARE FOUND</p>
-        <p class="search"><input type="text" placeholder="Job Title, Category, Company"> 
+        <p class="search"><input type="text" placeholder="Job Title, Category, Company">
             <button><i class="fa fa-search"></i>  Search</button></p>
         <p>RANDOM TEXT HERE SOMETHING SOMETHING</p>
+
+    </section>
+
+    <section id="about" class="about">
+        <div class="abtus">
+            <p class="heading">About Us</p>
+            <div class="flex">
+
+                <div><img src="abt.jpg" alt="abt" width="400px"></div>
+                <div class="abtdes">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis facilis voluptatem inventore totam iure ipsum quas quisquam autem qui itaque dolores labore, vero adipisci dolorum dolore officiis hic ad modi odio a, laudantium nam quae!
+                    Ab, fugiat dicta? Magni, quos.
+                    <br> <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet maiores est earum inventore deleniti maxime dignissimos, soluta voluptate, eos sit enim sint nisi quo temporibus, ipsum id exercitationem libero commodi!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="heading">Our Services</div>
+        <input type="text" class="item">
+        <input type="text" class="item">
+        <input type="text" class="item">
+    </section>
+
+    <section id="contact">
+        <div class="heading">Contact Us</div>
+        <div class="cont">
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="600" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=gwarko%20academia%20international&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+
+            </div>
+            <div class="msg">
+                <div class="leave">Leave Your Message</div>
+                <div class="form">
+                    <div class="box"><i class="fa fa-user"></i> <input type="text" class="inp" placeholder="Name"></div>
+                    <div class="box"><i class="fa fa-envelope"></i> <input type="text" class="inp" placeholder="Email"></div>
+                    <div class="box"><i class="fa fa-mobile"></i> <input type="text" class="inp" placeholder="Phone Number"></div>
+                    <textarea class="your" placeholder="Your Message"></textarea><br>
+                    <input type="button" value="SEND">
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
@@ -57,9 +183,43 @@
                 </ul>
             </div>
         </section>
-        <section class="footlogo"><div class="circ"></div><a href="#"><span class="job">JOB</span><span class="khoja">KHOJA</span></a></section>
+        <section class="footlogo">
+            <div class="circ"></div><a href="#"><span class="job">JOB</span><span class="khoja">KHOJA</span></a></section>
         <section class="copy">© All Rights Reserved, JOBKHOJA</section>
     </footer>
-    
+    <script>
+        var show_login = document.getElementById('show-login').addEventListener('click',
+            function() {
+                document.querySelector('.main-login').style.display = 'block';
+                document.querySelector('body').style.position = 'fixed';
+            });
+
+        var close_login = document.getElementById('close-login').addEventListener('click',
+            function() {
+                document.querySelector('.main-login').style.display = 'none';
+                document.querySelector('body').style.position = 'relative';
+
+            });
+
+        var show_signup = document.getElementById('show-signup').addEventListener('click',
+            function() {
+                document.querySelector('.main-signup').style.display = 'block';
+                document.querySelector('body').style.position = 'fixed';
+            });
+
+        var close_signup = document.getElementById('close-signup').addEventListener('click',
+            function() {
+                document.querySelector('.main-signup').style.display = 'none';
+                document.querySelector('body').style.position = 'relative';
+            });
+
+        document.getElementById('change-signup').addEventListener('click',
+            function() {
+                close_login;
+                show_signup;
+            }
+        );
+    </script>
 </body>
+
 </html>
